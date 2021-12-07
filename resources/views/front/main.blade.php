@@ -17,39 +17,42 @@
             <link rel="canonical" href="{{ isset($canonical) ? $canonical : 'https://klumba.ru/' }}"/>
             <title>Dilayra</title>
 
-{{--            <link rel="apple-touch-icon" sizes="180x180" href="{{ asset("/img/apple-touch-icon.png") }}">--}}
-{{--            <link rel="icon" type="image/png" href="{{ asset("/img/favicon-32x32.png") }}" sizes="32x32">--}}
-{{--            <link rel="icon" type="image/png" href="{{ asset("/img/favicon-16x16.png") }}" sizes="16x16">--}}
-{{--            <link rel="manifest" href="{{ asset("/img/manifest.json") }}">--}}
-{{--            <link rel="mask-icon" href="{{ asset("/img/safari-pinned-tab.svg") }}" color="#5bbad5">--}}
-            <meta name="theme-color" content="#13A826">
+            <link rel="apple-touch-icon" sizes="57x57" href="{{ asset("/icons/apple-icon-57x57.png") }}">
+            <link rel="apple-touch-icon" sizes="60x60" href="{{ asset("/icons/apple-icon-60x60.png") }}">
+            <link rel="apple-touch-icon" sizes="72x72" href="{{ asset("/icons/apple-icon-72x72.png") }}">
+            <link rel="apple-touch-icon" sizes="76x76" href="{{ asset("/icons/apple-icon-76x76.png") }}">
+            <link rel="apple-touch-icon" sizes="114x114" href="{{ asset("/icons/apple-icon-114x114.png") }}">
+            <link rel="apple-touch-icon" sizes="120x120" href="{{ asset("/icons/apple-icon-120x120.png") }}">
+            <link rel="apple-touch-icon" sizes="144x144" href="{{ asset("/icons/apple-icon-144x144.png") }}">
+            <link rel="apple-touch-icon" sizes="152x152" href="{{ asset("/icons/apple-icon-152x152.png") }}">
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ asset("/icons/apple-icon-180x180.png") }}">
+            <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset("/icons/android-icon-192x192.png") }}">
+            <link rel="icon" type="image/png" sizes="32x32" href="{{ asset("/icons/favicon-32x32.png") }}">
+            <link rel="icon" type="image/png" sizes="96x96" href="{{ asset("/icons/favicon-96x96.png") }}">
+            <link rel="icon" type="image/png" sizes="16x16" href="{{ asset("/icons/favicon-16x16.png") }}">
+            <link rel="manifest" href="{{ asset("/icons/manifest.json") }}">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="msapplication-TileImage" content="{{ asset("/icons/ms-icon-144x144.png") }}">
+            <meta name="theme-color" content="#ffffff">
 
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
             <link rel="stylesheet"  href="{{ asset('css/app.css') }}">
             <script src="{{ mix('js/app.js') }}" defer></script>
-            <style>
-                .bd-placeholder-img {
-                    font-size: 1.125rem;
-                    text-anchor: middle;
-                    -webkit-user-select: none;
-                    -moz-user-select: none;
-                    user-select: none;
-                }
-
-                @media (min-width: 768px) {
-                    .bd-placeholder-img-lg {
-                        font-size: 3.5rem;
-                    }
-                }
-            </style>
         </head>
 
         <body class="h-100 text-center text-white bg-dark">
             <div id="app">
 
-                <div class="first-block">
+                <div class="block1">
+                    <div class="galaxy-wrap">
+                        <div id='stars'></div>
+                        <div id='stars2'></div>
+                        <div id='stars3'></div>
+                    </div>
                     <div class="taro-image"></div>
+                    <div class="star-image"></div>
+                    <div class="dark-men"></div>
                     <div class="container-wrap d-flex flex-column">
                         <header class="header">
                             <div>
@@ -75,31 +78,33 @@
                                                 <p class="bottom-desc">Все, что нужно от Вас — желание решить<br>проблему, которая лишила Вас сна.</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="main-image">
-                                                <div class="star-image"></div>
-{{--                                                <div class="loaded" style="background-image: url('https://thumb.tildacdn.com/tild6437-6431-4534-b932-643063363961/-/cover/42x15/center/center/-/format/webp/image.png;');"></div>--}}
+                                        <div class="col-md-6 position-relative">
+                                            <div class="main-info">
+                                                <a class="phone" href="tel:+79155645722">+7(915) 564-57-22</a>
+                                                <div class="social-links-wrap">
+                                                    <div class="social-links"></div>
+                                                    <div class="social-links-text">Cвязь по мессенджеру</div>
+                                                </div>
+                                                <div class="social-links-types">Telegram, WhatsApp, Viber</div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div data-galaxy-id="364059575" class="t826__galaxy" style="position: absolute; z-index: 0;">
-                                    <div id='stars'></div>
-                                    <div id='stars2'></div>
-                                    <div id='stars3'></div>
                                 </div>
                             </div>
 
 
                         </main>
                 </div>
-
-
-                    <footer class="mt-auto text-white-50">
-                        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-                    </footer>
+                    <div class="main-footer">
+                        <div class="shadow"></div>
+                        <div class="border-italic"></div>
+                        <div class="text">Потомственный маг, свой дар черной магии я унаследовал от бабушки. Больше 10 лет я помогаю людям наладить любовную сферу жизни.</div>
+                    </div>
                 </div>
 
+                <div class="block2">
+
+                </div>
             </div>
         </body>
 </html>
